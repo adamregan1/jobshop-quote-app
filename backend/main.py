@@ -1,3 +1,5 @@
+app = FastAPI()
+
 from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
@@ -10,7 +12,6 @@ app.add_middleware(
 
 from fastapi import FastAPI
 
-app = FastAPI()
 
 @app.get("/")
 def read_root():
